@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d12d2a55-3ee3-41bd-bdd5-0a1d4a6465e0" name="Default Changelist" comment="" />
+    <list default="true" id="d12d2a55-3ee3-41bd-bdd5-0a1d4a6465e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/game1/com/company/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/game1/com/company/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/Window.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,23 +22,42 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UltsYzke3AcCK7whyYw2l2c3gY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.Game">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Application" />
       <module name="game1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tutorial.game.Game" />
+      <module name="game1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorial.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -51,9 +78,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Application" />
+      <item itemvalue="Application.Game" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Game" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -81,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575943216686</updated>
       <workItem from="1575943221544" duration="1754000" />
-      <workItem from="1576009137733" duration="1421000" />
+      <workItem from="1576009137733" duration="2802000" />
     </task>
     <servers />
   </component>
@@ -93,6 +122,22 @@
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
     <state x="650" y="-875" key="#com.intellij.ide.util.MemberChooser/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576011030833" />
+    <state width="1647" height="306" key="GridCell.Tab.0.bottom" timestamp="1576012495793">
+      <screen x="0" y="-1039" width="1691" height="910" />
+    </state>
+    <state width="1647" height="306" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576012495793" />
+    <state width="1647" height="306" key="GridCell.Tab.0.center" timestamp="1576012495793">
+      <screen x="0" y="-1039" width="1691" height="910" />
+    </state>
+    <state width="1647" height="306" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576012495793" />
+    <state width="1647" height="306" key="GridCell.Tab.0.left" timestamp="1576012495793">
+      <screen x="0" y="-1039" width="1691" height="910" />
+    </state>
+    <state width="1647" height="306" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576012495793" />
+    <state width="1647" height="306" key="GridCell.Tab.0.right" timestamp="1576012495793">
+      <screen x="0" y="-1039" width="1691" height="910" />
+    </state>
+    <state width="1647" height="306" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576012495793" />
     <state x="508" y="-847" key="search.everywhere.popup" timestamp="1576009867440">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
