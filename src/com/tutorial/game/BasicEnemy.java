@@ -2,9 +2,9 @@ package com.tutorial.game;
 
 import java.awt.*;
 
-public class Player extends GameObject {
+public class BasicEnemy extends GameObject {
 
-    public Player(int x, int y, ID id) {
+    public BasicEnemy(int x, int y, ID id) {
         super(x, y, id);
     }
 
@@ -14,7 +14,7 @@ public class Player extends GameObject {
     }
 
     public void render(Graphics g) {
-        if (id == ID.Player) g.setColor(Color.WHITE);
-        g.fillRect(x, y, 32, 32);
+        g.setColor(Color.RED);
+        g.fillRect(x, y, 16, 16);
     }
 }
