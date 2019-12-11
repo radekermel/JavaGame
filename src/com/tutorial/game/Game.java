@@ -9,19 +9,22 @@ public class Game extends Canvas implements Runnable {
     public static final int WIDTH = 640, HEIGHT = WIDTH / 12 * 9;
     private Thread thread;
     private boolean running = false;
-    private Random r;
+    private Random random;
     private Handler handler;
     private HUD hud;
+    private Spawn spawn;
 
     public Game() {
         handler = new Handler();
         this.addKeyListener(new KeyInput(handler));
-
         new Window(WIDTH, HEIGHT, "Game title", this);
+
         hud = new HUD();
-        r = new Random();
+        spawn = new Spawn(handler, hud);
+        random = new Random();
+
         handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
-        handler.addObject(new BasicEnemy(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.BasicEnemy, handler));
+        handler.addObject(new BasicEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.WIDTH), ID.BasicEnemy, handler));
     }
 
     public synchronized void start() {
@@ -58,8 +61,9 @@ public class Game extends Canvas implements Runnable {
                 delta--;
             }
 
-            if (running)
+            if (running) {
                 render();
+            }
             frames++;
 
             if (System.currentTimeMillis() - timer > 1000) {
@@ -75,6 +79,7 @@ public class Game extends Canvas implements Runnable {
     private void tick() {
         handler.tick();
         hud.tick();
+        spawn.tick();
     }
 
     private void render() {
