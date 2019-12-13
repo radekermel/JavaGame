@@ -24,7 +24,7 @@ public class Game extends Canvas implements Runnable {
         random = new Random();
 
         handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
-        handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler));
+
     }
 
     public synchronized void start() {
