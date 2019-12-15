@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1406afde-ee27-4ee5-8e5c-41fb0c2ed167" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/HUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/KeyInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/KeyInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/SmartEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/SmartEnemy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1V0SuwF2MGxJH7AhvisF0zI7Ugj" />
+  <component name="ProjectId" id="1V20Vo929mNYlTL9HgMccTRdu31" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,7 +25,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CypressDemo" />
   </component>
   <component name="RunManager">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -75,13 +64,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1406afde-ee27-4ee5-8e5c-41fb0c2ed167" name="Default Changelist" comment="" />
-      <created>1576388746979</created>
+      <changelist id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="" />
+      <created>1576435909150</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576388746979</updated>
-      <workItem from="1576388753479" duration="124000" />
-      <workItem from="1576388935566" duration="975000" />
+      <updated>1576435909150</updated>
+      <workItem from="1576435915798" duration="653000" />
+      <workItem from="1576438146329" duration="3620000" />
     </task>
     <servers />
   </component>
@@ -89,29 +78,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1576389122367">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="625" y="-871" key="FileChooserDialogImpl" timestamp="1576437368001">
+      <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576389122367" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1576389122367">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="625" y="-871" key="FileChooserDialogImpl/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576437368001" />
+    <state width="1647" height="239" key="GridCell.Tab.0.bottom" timestamp="1576442673438">
+      <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1576389122367" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1576389122367">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1647" height="239" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576442673438" />
+    <state width="1647" height="239" key="GridCell.Tab.0.center" timestamp="1576442673438">
+      <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1576389122367" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1576389122367">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1647" height="239" key="GridCell.Tab.0.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576442673438" />
+    <state width="1647" height="239" key="GridCell.Tab.0.left" timestamp="1576442673437">
+      <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1576389122367" />
-    <state x="184" y="5" key="SettingsEditor" timestamp="1576388881773">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1647" height="239" key="GridCell.Tab.0.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576442673437" />
+    <state width="1647" height="239" key="GridCell.Tab.0.right" timestamp="1576442673438">
+      <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1576388881773" />
-    <state x="384" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1576388755494">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="384" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1576388755494" />
+    <state width="1647" height="239" key="GridCell.Tab.0.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576442673438" />
   </component>
 </project>
