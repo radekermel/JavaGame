@@ -1,7 +1,6 @@
 package com.tutorial.game;
 
 public enum ID {
-
     Player(),
     BasicEnemy(),
     FastEnemy,
@@ -9,5 +8,4 @@ public enum ID {
     BossEnemy,
     BossBullet,
     Trail();
-
 }

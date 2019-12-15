@@ -10,7 +10,6 @@ public class HUD {
     private int level = 1;
 
     public void tick() {
-
         HEALTH = Game.clamp(HEALTH, 0, 100);
         colorTransitionValue = Game.clamp(colorTransitionValue, 0, 255);
         colorTransitionValue = HEALTH * 2;
@@ -24,7 +23,6 @@ public class HUD {
         g.fillRect(15, 15, (int)HEALTH * 2, 32);
         g.setColor(Color.WHITE);
         g.drawRect(15, 15, 200, 32);
-
         g.drawString("Score: " + score, 15, 64);
         g.drawString("Level: " + level, 15, 80);
     }

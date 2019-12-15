@@ -44,6 +44,4 @@ public class Menu extends MouseAdapter {
         g.drawRect(210, 350, 200, 64);
         g.drawString("Quit", 270, 390);
     }
-
-
 }

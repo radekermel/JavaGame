@@ -14,7 +14,6 @@ public class SmartEnemy extends GameObject {
             if (handler.object.get(i).getId() == ID.Player)
                 player = handler.object.get(i);
         }
-
     }
 
     public Rectangle getBounds() {

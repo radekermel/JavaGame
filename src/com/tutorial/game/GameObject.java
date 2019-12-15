@@ -59,5 +59,4 @@ public abstract class GameObject {
     public float getVelY() {
         return velY;
     }
-
 }
