@@ -24,6 +24,7 @@ public class Menu extends MouseAdapter {
             if (mouseOver(mx, my, 210, 150, 200, 64)) {
                 game.gameState = Game.STATE.Game;
                 handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
+                handler.clearEnemies();
             }
             //HelpButton
             if (mouseOver(mx, my, 210, 250, 200, 64)) {
@@ -66,7 +67,7 @@ public class Menu extends MouseAdapter {
 
             g.setFont(fnt);
             g.setColor(Color.CYAN);
-            g.drawString("Menu", 240, 50);
+            g.drawString("Game!", 240, 50);
 
             g.setFont(fnt2);
             g.setColor(Color.WHITE);

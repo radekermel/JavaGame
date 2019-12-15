@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tutorial/game/MenuParticle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/ID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutorial/game/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +27,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../CypressDemo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tutorial.game" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -70,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576435909150</updated>
       <workItem from="1576435915798" duration="653000" />
-      <workItem from="1576438146329" duration="3620000" />
+      <workItem from="1576438146329" duration="6412000" />
     </task>
     <servers />
   </component>
@@ -78,25 +84,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="525" y="-898" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576444929798">
+      <screen x="0" y="-1080" width="1691" height="910" />
+    </state>
+    <state x="525" y="-898" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576444929798" />
     <state x="625" y="-871" key="FileChooserDialogImpl" timestamp="1576437368001">
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
     <state x="625" y="-871" key="FileChooserDialogImpl/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576437368001" />
-    <state width="1647" height="239" key="GridCell.Tab.0.bottom" timestamp="1576442673438">
+    <state width="1647" height="239" key="GridCell.Tab.0.bottom" timestamp="1576445548578">
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state width="1647" height="239" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576442673438" />
-    <state width="1647" height="239" key="GridCell.Tab.0.center" timestamp="1576442673438">
+    <state width="1647" height="239" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445548578" />
+    <state width="1647" height="239" key="GridCell.Tab.0.center" timestamp="1576445548578">
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state width="1647" height="239" key="GridCell.Tab.0.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576442673438" />
-    <state width="1647" height="239" key="GridCell.Tab.0.left" timestamp="1576442673437">
+    <state width="1647" height="239" key="GridCell.Tab.0.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445548578" />
+    <state width="1647" height="239" key="GridCell.Tab.0.left" timestamp="1576445548578">
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state width="1647" height="239" key="GridCell.Tab.0.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576442673437" />
-    <state width="1647" height="239" key="GridCell.Tab.0.right" timestamp="1576442673438">
+    <state width="1647" height="239" key="GridCell.Tab.0.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445548578" />
+    <state width="1647" height="239" key="GridCell.Tab.0.right" timestamp="1576445548578">
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
-    <state width="1647" height="239" key="GridCell.Tab.0.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576442673438" />
+    <state width="1647" height="239" key="GridCell.Tab.0.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445548578" />
+    <state width="1647" height="296" key="GridCell.Tab.1.bottom" timestamp="1576445149347">
+      <screen x="0" y="-1080" width="1691" height="910" />
+    </state>
+    <state width="1647" height="296" key="GridCell.Tab.1.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445149347" />
+    <state width="1647" height="296" key="GridCell.Tab.1.center" timestamp="1576445149346">
+      <screen x="0" y="-1080" width="1691" height="910" />
+    </state>
+    <state width="1647" height="296" key="GridCell.Tab.1.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445149346" />
+    <state width="1647" height="296" key="GridCell.Tab.1.left" timestamp="1576445149346">
+      <screen x="0" y="-1080" width="1691" height="910" />
+    </state>
+    <state width="1647" height="296" key="GridCell.Tab.1.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445149346" />
+    <state width="1647" height="296" key="GridCell.Tab.1.right" timestamp="1576445149346">
+      <screen x="0" y="-1080" width="1691" height="910" />
+    </state>
+    <state width="1647" height="296" key="GridCell.Tab.1.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445149346" />
   </component>
 </project>
