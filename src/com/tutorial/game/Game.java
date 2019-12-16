@@ -15,6 +15,8 @@ public class Game extends Canvas implements Runnable {
     private Spawn spawn;
     private Menu menu;
 
+    public static boolean paused = false;
+
     public enum STATE {
         Menu,
         Help,
@@ -28,7 +30,7 @@ public class Game extends Canvas implements Runnable {
         handler = new Handler();
         hud = new HUD();
         menu = new Menu(this, handler, hud);
-        this.addKeyListener(new KeyInput(handler));
+        this.addKeyListener(new KeyInput(handler, this));
         new Window(WIDTH, HEIGHT, "Game title", this);
         this.addMouseListener(menu);
 
@@ -94,21 +96,24 @@ public class Game extends Canvas implements Runnable {
     }
 
     private void tick() {
-        handler.tick();
-        if (gameState == STATE.Game) {
-            hud.tick();
-            spawn.tick();
 
-            if (HUD.HEALTH <= 0) {
-                HUD.HEALTH = 100;
-                gameState = STATE.End;
-                handler.clearEnemies();
-                for (int i = 0; i < 20; i++) {
-                    handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler));
+        if (gameState == STATE.Game) {
+            if (!paused) {
+                hud.tick();
+                spawn.tick();
+                handler.tick();
+                if (HUD.HEALTH <= 0) {
+                    HUD.HEALTH = 100;
+                    gameState = STATE.End;
+                    handler.clearEnemies();
+                    for (int i = 0; i < 20; i++) {
+                        handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler));
+                    }
                 }
             }
         } else if (gameState == STATE.Menu || gameState == STATE.End) {
             menu.tick();
+            handler.tick();
         }
     }
 
@@ -124,6 +129,11 @@ public class Game extends Canvas implements Runnable {
         g.fillRect(0, 0, WIDTH, HEIGHT);
 
         handler.render(g);
+
+        if (paused) {
+            g.setColor(Color.WHITE);
+            g.drawString("PAUSED", 200, 100);
+        }
 
         if (gameState == STATE.Game) {
             hud.render(g);
