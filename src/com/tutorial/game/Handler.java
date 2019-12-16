@@ -1,11 +1,11 @@
 package com.tutorial.game;
 
 import java.awt.*;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Handler {
 
-    LinkedList<GameObject> object = new LinkedList<GameObject>();
+    ArrayList<GameObject> object = new ArrayList<>();
 
     public void tick() {
         for (int i = 0; i < object.size(); i++) {
@@ -33,9 +33,13 @@ public class Handler {
         for (int i = 0; i < object.size(); i++) {
             GameObject tempObject = object.get(i);
 
-            if (tempObject.getId() == ID.Player) {
+            if (Game.gameState != Game.STATE.Game) {
                 object.clear();
-                addObject(new Player((int) tempObject.getX(), (int) tempObject.getY(), ID.Player, this));
+            }
+
+            if (tempObject.getId() != ID.Player) {
+                removeObject(tempObject);
+                i--;
             }
         }
     }
