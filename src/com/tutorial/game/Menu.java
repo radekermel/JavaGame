@@ -3,6 +3,7 @@ package com.tutorial.game;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Random;
 
 public class Menu extends MouseAdapter {
 
@@ -10,6 +11,7 @@ public class Menu extends MouseAdapter {
     private Handler handler;
     private HUD hud;
 
+    private Random random = new Random();
     private Font headerFont = new Font("arial", 1, 50);
     private Font menuFont = new Font("arial", 1, 30);
     private Font descriptionFont = new Font("arial", 1, 20);
@@ -31,6 +33,8 @@ public class Menu extends MouseAdapter {
                 game.gameState = Game.STATE.Game;
                 handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
                 handler.clearEnemies();
+                handler.addObject(new BasicEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.BasicEnemy, handler));
+
             }
             //HelpButton
             if (mouseOver(mx, my, 210, 250, 200, 64)) {
@@ -56,7 +60,7 @@ public class Menu extends MouseAdapter {
                 hud.setScore(0);
                 handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
                 handler.clearEnemies();
-                handler.addObject(new BasicEnemy(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.BasicEnemy, handler));
+                handler.addObject(new BasicEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.BasicEnemy, handler));
             }
         }
     }
@@ -76,7 +80,6 @@ public class Menu extends MouseAdapter {
     public void tick() {
 
     }
-
 
 
     public void render(Graphics g) {
