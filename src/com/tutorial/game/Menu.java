@@ -30,11 +30,8 @@ public class Menu extends MouseAdapter {
         if (game.gameState == Game.STATE.Menu) {
             //PlayButton
             if (mouseOver(mx, my, 210, 150, 200, 64)) {
-                game.gameState = Game.STATE.Game;
-                handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
-                handler.clearEnemies();
-                handler.addObject(new BasicEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.BasicEnemy, handler));
-
+                game.gameState = Game.STATE.Select;
+                return;
             }
             //HelpButton
             if (mouseOver(mx, my, 210, 250, 200, 64)) {
@@ -45,6 +42,31 @@ public class Menu extends MouseAdapter {
                 System.exit(1);
             }
         }
+
+        if (game.gameState == Game.STATE.Select) {
+            //EasyButton
+            if (mouseOver(mx, my, 210, 150, 200, 64)) {
+                game.gameState = Game.STATE.Game;
+                handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
+                handler.clearEnemies();
+                handler.addObject(new BasicEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.BasicEnemy, handler));
+                game.difficulty = 0;
+            }
+            //HardButton
+            if (mouseOver(mx, my, 210, 250, 200, 64)) {
+                game.gameState = Game.STATE.Game;
+                handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
+                handler.clearEnemies();
+                handler.addObject(new HardEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.HardEnemy, handler));
+                game.difficulty = 1;
+            }
+            //BackButton
+            if (mouseOver(mx, my, 210, 350, 200, 64)) {
+                    game.gameState = Game.STATE.Menu;
+                    return;
+            }
+        }
+
         //BackButton
         if (game.gameState == Game.STATE.Help) {
             if (mouseOver(mx, my, 210, 350, 200, 64)) {
@@ -102,6 +124,7 @@ public class Menu extends MouseAdapter {
 
             g.setFont(descriptionFont);
             g.drawString("Use WSAD keys to move around and doge enemies!", 60, 200);
+            g.drawString("Press 'P' for Pause.", 220, 230);
 
             g.setFont(menuFont);
             g.drawString("Help", 240, 50);
@@ -118,6 +141,19 @@ public class Menu extends MouseAdapter {
             g.setFont(menuFont);
             g.drawRect(210, 350, 200, 64);
             g.drawString("Try Again", 245, 390);
+        } else if (Game.gameState == Game.STATE.Select) {
+            g.setFont(headerFont);
+            g.setColor(Color.CYAN);
+            g.drawString("SELECT DIFFICULTY", 140, 50);
+
+            g.setFont(menuFont);
+            g.setColor(Color.WHITE);
+            g.drawRect(210, 150, 200, 64);
+            g.drawString("Normal", 270, 190);
+            g.drawRect(210, 250, 200, 64);
+            g.drawString("Hard", 270, 290);
+            g.drawRect(210, 350, 200, 64);
+            g.drawString("Back", 270, 390);
         }
     }
 }
