@@ -1,4 +1,4 @@
-package com.tutorial.game;
+package com.tutorial.game.JavaGame;
 
 import java.util.Random;
 
@@ -47,4 +47,4 @@ public class Spawn {
         }
     }
 }
-    
+

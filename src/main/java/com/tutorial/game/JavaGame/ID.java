@@ -1,4 +1,4 @@
-package com.tutorial.game;
+package com.tutorial.game.JavaGame;
 
 public enum ID {
     Player(),

@@ -1,4 +1,4 @@
-package com.tutorial.game;
+package com.tutorial.game.JavaGame;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;

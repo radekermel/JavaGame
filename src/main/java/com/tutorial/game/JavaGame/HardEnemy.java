@@ -1,16 +1,16 @@
-package com.tutorial.game;
+package com.tutorial.game.JavaGame;
 
 import java.awt.*;
 
-public class FastEnemy extends GameObject {
+public class HardEnemy extends GameObject {
 
     private Handler handler;
 
-    public FastEnemy(int x, int y, ID id, Handler handler) {
+    public HardEnemy(int x, int y, ID id, Handler handler) {
         super(x, y, id);
         this.handler = handler;
-        velX = 2;
-        velY = 9;
+        velX = 5;
+        velY = 5;
     }
 
     public Rectangle getBounds() {
@@ -24,11 +24,11 @@ public class FastEnemy extends GameObject {
         if (y <= 0 || y >= Game.HEIGHT - 32) velY *= -1;
         if (x <= 0 || x >= Game.WIDTH - 16) velX *= -1;
 
-        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.CYAN, 16, 16, 0.05f, handler)));
+        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.YELLOW, 16, 16, 0.05f, handler)));
     }
 
     public void render(Graphics g) {
-        g.setColor(Color.CYAN);
+        g.setColor(Color.YELLOW);
         g.fillRect((int) x, (int) y, 16, 16);
     }
 }

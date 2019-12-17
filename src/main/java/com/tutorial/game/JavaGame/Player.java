@@ -1,4 +1,4 @@
-package com.tutorial.game;
+package com.tutorial.game.JavaGame;
 
 import java.awt.*;
 
@@ -9,7 +9,6 @@ public class Player extends GameObject {
         super(x, y, id);
         this.handler = handler;
     }
-
 
     public Rectangle getBounds() {
         return new Rectangle((int) x, (int) y, 32, 32);

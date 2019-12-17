@@ -1,4 +1,4 @@
-package com.tutorial.game;
+package com.tutorial.game.JavaGame;
 
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -62,8 +62,8 @@ public class Menu extends MouseAdapter {
             }
             //BackButton
             if (mouseOver(mx, my, 210, 350, 200, 64)) {
-                    game.gameState = Game.STATE.Menu;
-                    return;
+                game.gameState = Game.STATE.Menu;
+                return;
             }
         }
 
