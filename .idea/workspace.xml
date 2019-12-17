@@ -2,37 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorial/game/JavaGame/JavaGameApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorial/game/JavaGame/BasicEnemyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/BasicEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BasicEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/BossBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BossBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/BossEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BossEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/FastEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/HardEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/KeyInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/KeyInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/MenuParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MenuParticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/SmartEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/SmartEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Trail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Trail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutorial/game/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorial/game/JavaGame/JavaGameApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,25 +36,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="JavaGame" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="JavaGame" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="JavaGame" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="JavaGame" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -86,6 +44,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,6 +65,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeleniumTestContainers" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -107,23 +74,67 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tutorial.game.JavaGame" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tutorial.game" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.JavaGame [clean]">
-    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tutorial.game.Game" />
-      <module name="JavaGame" />
+  <component name="RunManager" selected="Application.Game (1)">
+    <configuration name="Game (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tutorial.game.JavaGame.Game" />
+      <module name="JavaGame.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tutorial.game.*" />
+          <option name="PATTERN" value="com.tutorial.game.JavaGame.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="JavaGame [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JavaGame [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="JavaGame [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -144,10 +155,32 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="JavaGame [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Game (1)" />
+        <item itemvalue="Gradle.JavaGame [bootRun]" />
+        <item itemvalue="Gradle.JavaGame [build]" />
+        <item itemvalue="Gradle.JavaGame [test]" />
         <item itemvalue="Gradle.JavaGame [clean]" />
-        <item itemvalue="Application.Game" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +209,7 @@
       <workItem from="1576435915798" duration="653000" />
       <workItem from="1576438146329" duration="27019000" />
       <workItem from="1576613673943" duration="669000" />
+      <workItem from="1576614375779" duration="5850000" />
     </task>
     <servers />
   </component>
@@ -191,30 +225,34 @@
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
     <state x="525" y="-898" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576444929798" />
+    <state x="92" y="-947" width="1507" height="727" key="DiffContextDialog" timestamp="1576616746917">
+      <screen x="0" y="-1039" width="1691" height="910" />
+    </state>
+    <state x="92" y="-947" width="1507" height="727" key="DiffContextDialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576616746917" />
     <state x="625" y="-830" key="FileChooserDialogImpl" timestamp="1576611229968">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
     <state x="625" y="-830" key="FileChooserDialogImpl/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576611229968" />
     <state x="625" y="-871" key="FileChooserDialogImpl/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576437368001" />
-    <state width="1647" height="242" key="GridCell.Tab.0.bottom" timestamp="1576614344591">
+    <state width="1647" height="242" key="GridCell.Tab.0.bottom" timestamp="1576620232686">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="242" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576614344591" />
+    <state width="1647" height="242" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576620232686" />
     <state width="1647" height="242" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984927" />
-    <state width="1647" height="242" key="GridCell.Tab.0.center" timestamp="1576614344591">
+    <state width="1647" height="242" key="GridCell.Tab.0.center" timestamp="1576620232686">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="242" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576614344591" />
+    <state width="1647" height="242" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576620232686" />
     <state width="1647" height="242" key="GridCell.Tab.0.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="242" key="GridCell.Tab.0.left" timestamp="1576614344591">
+    <state width="1647" height="242" key="GridCell.Tab.0.left" timestamp="1576620232686">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="242" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576614344591" />
+    <state width="1647" height="242" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576620232686" />
     <state width="1647" height="242" key="GridCell.Tab.0.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="242" key="GridCell.Tab.0.right" timestamp="1576614344591">
+    <state width="1647" height="242" key="GridCell.Tab.0.right" timestamp="1576620232686">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="242" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576614344591" />
+    <state width="1647" height="242" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576620232686" />
     <state width="1647" height="242" key="GridCell.Tab.0.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
     <state width="1647" height="296" key="GridCell.Tab.1.bottom" timestamp="1576613553711">
       <screen x="0" y="-1039" width="1691" height="910" />
@@ -244,6 +282,10 @@
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
     <state x="354" y="-942" key="SettingsEditor/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576611198747" />
+    <state x="616" y="-866" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576614805294">
+      <screen x="0" y="-1039" width="1691" height="910" />
+    </state>
+    <state x="616" y="-866" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576614805294" />
     <state x="575" y="-860" key="extract.method.dialog" timestamp="1576460960028">
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>

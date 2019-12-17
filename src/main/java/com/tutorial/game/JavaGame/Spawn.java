@@ -8,12 +8,31 @@ public class Spawn {
     private Game game;
     private int scoreKeep = 0;
     private int levelKeep = 0;
+    private int enemyCount = 0;
     private Random randomPosition = new Random();
+
+    private static String spawnedText = " enemy spawned: ";
 
     public Spawn(Handler handler, HUD hud, Game game) {
         this.handler = handler;
         this.hud = hud;
         this.game = game;
+    }
+
+    public void setEnemyCount(int enemyCount) {
+        this.enemyCount = enemyCount;
+    }
+
+    public int getEnemyCount() {
+        return enemyCount;
+    }
+
+    public void setLevelKeep(int levelKeep) {
+        this.levelKeep = levelKeep;
+    }
+
+    public int getLevelKeeP() {
+        return levelKeep;
     }
 
     public void tick() {
@@ -22,26 +41,39 @@ public class Spawn {
         if (scoreKeep >= 100) {
             scoreKeep = 0;
             hud.setLevel(hud.getLevel() + 1);
-            levelKeep++;
-            if (levelKeep >= 1) {
+            setLevelKeep(getLevelKeeP() + 1);
+            if (getLevelKeeP() >= 1) {
                 if (game.difficulty == 0) {
-                    if (levelKeep % 3 == 0) {
+                    if (getLevelKeeP() % 3 == 0) {
                         handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
-                    } else if (levelKeep % 5 == 0 && levelKeep % 2 == 0) {
+                        setEnemyCount(getEnemyCount() + 1);
+                        System.out.println(ID.FastEnemy + spawnedText + enemyCount);
+                    } else if (getLevelKeeP() % 10 == 0) {
                         handler.clearEnemies();
                         handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler));
-                    } else if (levelKeep % 2 == 0) {
+                        setEnemyCount(getEnemyCount() + 1);
+                        System.out.println(ID.BossEnemy + spawnedText + enemyCount);
+                    } else if (getLevelKeeP() != 0) {
                         handler.addObject(new BasicEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
+                        setEnemyCount(getEnemyCount() + 1);
+                        System.out.println(ID.BasicEnemy + spawnedText + enemyCount);
                     }
                 }
-            } else if (game.difficulty == 1) {
-                if (levelKeep % 3 == 0) {
-                    handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
-                } else if (levelKeep % 5 == 0 && levelKeep % 2 == 0) {
-                    handler.clearEnemies();
-                    handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler));
-                } else if (levelKeep % 2 == 0) {
-                    handler.addObject(new BasicEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
+                if (game.difficulty == 1) {
+                    if (getLevelKeeP() % 3 == 0) {
+                        handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
+                        setEnemyCount(getEnemyCount() + 1);
+                        System.out.println(ID.FastEnemy + spawnedText + enemyCount);
+                    } else if (getLevelKeeP() % 10 == 0) {
+                        handler.clearEnemies();
+                        handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler));
+                        setEnemyCount(getEnemyCount() + 1);
+                        System.out.println(ID.BossEnemy + spawnedText + enemyCount);
+                    } else if (getLevelKeeP() != 0) {
+                        handler.addObject(new HardEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.HardEnemy, handler));
+                        setEnemyCount(getEnemyCount() + 1);
+                        System.out.println(ID.HardEnemy + spawnedText + enemyCount);
+                    }
                 }
             }
         }
