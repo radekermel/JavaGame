@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class Handler {
 
+    public int speed = 5;
+
     ArrayList<GameObject> object = new ArrayList<>();
 
     public void tick() {

@@ -15,6 +15,7 @@ public class Game extends Canvas implements Runnable {
     private HUD hud;
     private Spawn spawn;
     private Menu menu;
+    private Shop shop;
 
     public int difficulty = 0;
     public static boolean paused = false;
@@ -24,6 +25,7 @@ public class Game extends Canvas implements Runnable {
         Help,
         Game,
         Select,
+        Shop,
         End;
     }
 
@@ -34,6 +36,7 @@ public class Game extends Canvas implements Runnable {
     public Game() {
         handler = new Handler();
         hud = new HUD();
+        shop = new Shop(hud, handler);
         menu = new Menu(this, handler, hud);
         this.addKeyListener(new KeyInput(handler, this));
         new Window(WIDTH, HEIGHT, "Game title", this);
@@ -42,6 +45,7 @@ public class Game extends Canvas implements Runnable {
         SPRITE_SHEET = loader.loadImage("/chart.png");
 
         this.addMouseListener(menu);
+        this.addMouseListener(shop);
 
         spawn = new Spawn(handler, hud, this);
         random = new Random();
@@ -139,8 +143,6 @@ public class Game extends Canvas implements Runnable {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, WIDTH, HEIGHT);
 
-        handler.render(g);
-
         if (paused) {
             g.setColor(Color.WHITE);
             g.drawString("PAUSED", 200, 100);
@@ -148,8 +150,12 @@ public class Game extends Canvas implements Runnable {
 
         if (gameState == STATE.Game) {
             hud.render(g);
+            handler.render(g);
+        } else if (gameState == STATE.Shop) {
+            shop.render(g);
         } else if (gameState == STATE.Menu || gameState == STATE.Help || gameState == STATE.End || gameState == STATE.Select) {
             menu.render(g);
+            handler.render(g);
         }
 
         g.dispose();
