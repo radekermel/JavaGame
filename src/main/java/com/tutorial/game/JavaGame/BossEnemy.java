@@ -1,12 +1,14 @@
 package com.tutorial.game.JavaGame;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.util.Random;
 
 public class BossEnemy extends GameObject {
 
     private Handler handler;
     private Random random = new Random();
+    private BufferedImage ENEMY_IMAGE;
     private int timer = 50;
     private int timer2 = 50;
 
@@ -15,10 +17,12 @@ public class BossEnemy extends GameObject {
         this.handler = handler;
         velX = 0;
         velY = 4;
+        SpriteSheet ss = new SpriteSheet((Game.SPRITE_SHEET));
+        ENEMY_IMAGE = ss.grabImage(2, 3, 64, 32);
     }
 
     public Rectangle getBounds() {
-        return new Rectangle((int) x, (int) y, 64, 64);
+        return new Rectangle((int) x, (int) y, 64, 32);
     }
 
     public void tick() {
@@ -48,7 +52,6 @@ public class BossEnemy extends GameObject {
     }
 
     public void render(Graphics g) {
-        g.setColor(Color.ORANGE);
-        g.fillRect((int) x, (int) y, 64, 64);
+        g.drawImage(ENEMY_IMAGE, (int) x, (int) y, null);
     }
 }

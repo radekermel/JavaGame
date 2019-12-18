@@ -50,12 +50,16 @@ public class Spawn {
                         handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
                         setEnemyCount(getEnemyCount() + 1);
                         System.out.println(ID.FastEnemy + spawnedText + enemyCount);
+                    } else if (getLevelKeeP() % 5 == 0) {
+                        handler.addObject(new SmartEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.SmartEnemy, handler));
+                        setEnemyCount(getEnemyCount() + 1);
+                        System.out.println(ID.SmartEnemy + spawnedText + enemyCount);
                     } else if (getLevelKeeP() % 10 == 0) {
                         handler.clearEnemies();
                         handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler));
                         setEnemyCount(getEnemyCount() + 1);
                         System.out.println(ID.BossEnemy + spawnedText + enemyCount);
-                    } else if (getLevelKeeP() != 0) {
+                    } else {
                         handler.addObject(new BasicEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
                         setEnemyCount(getEnemyCount() + 1);
                         System.out.println(ID.BasicEnemy + spawnedText + enemyCount);
@@ -66,12 +70,16 @@ public class Spawn {
                         handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
                         setEnemyCount(getEnemyCount() + 1);
                         System.out.println(ID.FastEnemy + spawnedText + enemyCount);
+                    } else if (getLevelKeeP() % 5 == 0) {
+                        handler.addObject(new SmartEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.SmartEnemy, handler));
+                        setEnemyCount(getEnemyCount() + 1);
+                        System.out.println(ID.SmartEnemy + spawnedText + enemyCount);
                     } else if (getLevelKeeP() % 15 == 0) {
                         handler.clearEnemies();
                         handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler));
                         setEnemyCount(getEnemyCount() + 1);
                         System.out.println(ID.BossEnemy + spawnedText + enemyCount);
-                    } else if (getLevelKeeP() != 0) {
+                    } else {
                         handler.addObject(new HardEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.HardEnemy, handler));
                         setEnemyCount(getEnemyCount() + 1);
                         System.out.println(ID.HardEnemy + spawnedText + enemyCount);

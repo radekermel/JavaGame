@@ -16,7 +16,7 @@ public class BossBullet extends GameObject {
         velX = (random.nextInt(5 - -5) + -5);
         velY = 5;
         SpriteSheet ss = new SpriteSheet((Game.SPRITE_SHEET));
-        ENEMY_IMAGE = ss.grabImage(2, 2, 32, 32);
+        ENEMY_IMAGE = ss.grabImage(2, 2, 32, 22);
     }
 
     public Rectangle getBounds() {

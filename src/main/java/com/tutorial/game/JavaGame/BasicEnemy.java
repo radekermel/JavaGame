@@ -15,7 +15,7 @@ public class BasicEnemy extends GameObject {
         velY = 5;
 
         SpriteSheet ss = new SpriteSheet((Game.SPRITE_SHEET));
-        ENEMY_IMAGE = ss.grabImage(1, 2, 32, 32);
+        ENEMY_IMAGE = ss.grabImage(1, 2, 32, 22);
     }
 
     public Rectangle getBounds() {
