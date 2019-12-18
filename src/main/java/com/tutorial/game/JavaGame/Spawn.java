@@ -11,7 +11,7 @@ public class Spawn {
     private int enemyCount = 0;
     private Random randomPosition = new Random();
 
-    private static String spawnedText = " enemy spawned: ";
+    private String spawnedText = " enemy spawned: ";
 
     public Spawn(Handler handler, HUD hud, Game game) {
         this.handler = handler;
@@ -41,7 +41,9 @@ public class Spawn {
         if (scoreKeep >= 100) {
             scoreKeep = 0;
             hud.setLevel(hud.getLevel() + 1);
+
             setLevelKeep(getLevelKeeP() + 1);
+
             if (getLevelKeeP() >= 1) {
                 if (game.difficulty == 0) {
                     if (getLevelKeeP() % 3 == 0) {
@@ -64,7 +66,7 @@ public class Spawn {
                         handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
                         setEnemyCount(getEnemyCount() + 1);
                         System.out.println(ID.FastEnemy + spawnedText + enemyCount);
-                    } else if (getLevelKeeP() % 10 == 0) {
+                    } else if (getLevelKeeP() % 15 == 0) {
                         handler.clearEnemies();
                         handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler));
                         setEnemyCount(getEnemyCount() + 1);
@@ -79,4 +81,3 @@ public class Spawn {
         }
     }
 }
-

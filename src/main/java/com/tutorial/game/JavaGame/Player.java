@@ -1,13 +1,18 @@
 package com.tutorial.game.JavaGame;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Player extends GameObject {
     Handler handler;
 
+    private BufferedImage player_image;
+
     public Player(int x, int y, ID id, Handler handler) {
         super(x, y, id);
         this.handler = handler;
+        SpriteSheet ss = new SpriteSheet(Game.SPRITE_SHEET);
+        player_image = ss.grabImage(1, 1, 32, 32);
     }
 
     public Rectangle getBounds() {
@@ -41,7 +46,6 @@ public class Player extends GameObject {
     }
 
     public void render(Graphics g) {
-        if (id == ID.Player) g.setColor(Color.WHITE);
-        g.fillRect((int) x, (int) y, 32, 32);
+        g.drawImage(player_image, (int) x, (int) y, null);
     }
 }

@@ -2,6 +2,7 @@ package com.tutorial.game.JavaGame;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
 import java.util.Random;
 
 public class Game extends Canvas implements Runnable {
@@ -28,12 +29,18 @@ public class Game extends Canvas implements Runnable {
 
     public static STATE gameState = STATE.Menu;
 
+    public static BufferedImage SPRITE_SHEET;
+
     public Game() {
         handler = new Handler();
         hud = new HUD();
         menu = new Menu(this, handler, hud);
         this.addKeyListener(new KeyInput(handler, this));
         new Window(WIDTH, HEIGHT, "Game title", this);
+
+        BufferedImageLoader loader = new BufferedImageLoader();
+        SPRITE_SHEET = loader.loadImage("/chart.png");
+
         this.addMouseListener(menu);
 
         spawn = new Spawn(handler, hud, this);

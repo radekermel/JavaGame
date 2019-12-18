@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorial/game/JavaGame/BasicEnemyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BufferedImageLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/SpriteSheet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BasicEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BasicEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BossBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BossBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorial/game/JavaGame/JavaGameApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,7 +75,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -209,7 +213,7 @@
       <workItem from="1576435915798" duration="653000" />
       <workItem from="1576438146329" duration="27019000" />
       <workItem from="1576613673943" duration="669000" />
-      <workItem from="1576614375779" duration="5850000" />
+      <workItem from="1576614375779" duration="14783000" />
     </task>
     <servers />
   </component>
@@ -234,25 +238,25 @@
     </state>
     <state x="625" y="-830" key="FileChooserDialogImpl/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576611229968" />
     <state x="625" y="-871" key="FileChooserDialogImpl/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576437368001" />
-    <state width="1647" height="242" key="GridCell.Tab.0.bottom" timestamp="1576620232686">
+    <state width="1647" height="239" key="GridCell.Tab.0.bottom" timestamp="1576700627542">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="242" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576620232686" />
+    <state width="1647" height="239" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576700627542" />
     <state width="1647" height="242" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984927" />
-    <state width="1647" height="242" key="GridCell.Tab.0.center" timestamp="1576620232686">
+    <state width="1647" height="239" key="GridCell.Tab.0.center" timestamp="1576700627542">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="242" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576620232686" />
+    <state width="1647" height="239" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576700627542" />
     <state width="1647" height="242" key="GridCell.Tab.0.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="242" key="GridCell.Tab.0.left" timestamp="1576620232686">
+    <state width="1647" height="239" key="GridCell.Tab.0.left" timestamp="1576700627541">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="242" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576620232686" />
+    <state width="1647" height="239" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576700627541" />
     <state width="1647" height="242" key="GridCell.Tab.0.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="242" key="GridCell.Tab.0.right" timestamp="1576620232686">
+    <state width="1647" height="239" key="GridCell.Tab.0.right" timestamp="1576700627542">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="242" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576620232686" />
+    <state width="1647" height="239" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576700627542" />
     <state width="1647" height="242" key="GridCell.Tab.0.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
     <state width="1647" height="296" key="GridCell.Tab.1.bottom" timestamp="1576613553711">
       <screen x="0" y="-1039" width="1691" height="910" />
@@ -278,10 +282,10 @@
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
     <state x="107" y="-851" width="1551" height="516" key="IDE.errors.dialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576613898674" />
-    <state x="354" y="-942" key="SettingsEditor" timestamp="1576611198747">
+    <state x="354" y="-942" key="SettingsEditor" timestamp="1576622926663">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state x="354" y="-942" key="SettingsEditor/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576611198747" />
+    <state x="354" y="-942" key="SettingsEditor/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576622926663" />
     <state x="616" y="-866" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576614805294">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
@@ -290,10 +294,10 @@
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
     <state x="575" y="-860" key="extract.method.dialog/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460960028" />
-    <state x="508" y="-847" width="672" height="678" key="search.everywhere.popup" timestamp="1576463192312">
+    <state x="508" y="-847" width="672" height="678" key="search.everywhere.popup" timestamp="1576633867387">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state x="508" y="-847" width="672" height="678" key="search.everywhere.popup/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576463192312" />
+    <state x="508" y="-847" width="672" height="678" key="search.everywhere.popup/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576633867387" />
     <state x="508" y="-888" width="672" height="678" key="search.everywhere.popup/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576445729786" />
   </component>
 </project>
