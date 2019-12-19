@@ -6,17 +6,17 @@ import java.util.Random;
 
 public class BossBullet extends GameObject {
 
-    private Handler handler;
-    private Random random = new Random();
-    private BufferedImage ENEMY_IMAGE;
+    private final Handler handler;
+    private final BufferedImage BOSS_BULLET_IMAGE;
 
     public BossBullet(int x, int y, ID id, Handler handler) {
         super(x, y, id);
         this.handler = handler;
+        Random random = new Random();
         velX = (random.nextInt(5 - -5) + -5);
         velY = 5;
         SpriteSheet ss = new SpriteSheet((Game.SPRITE_SHEET));
-        ENEMY_IMAGE = ss.grabImage(2, 2, 32, 22);
+        BOSS_BULLET_IMAGE = ss.grabImage(2, 2, 32, 22);
     }
 
     public Rectangle getBounds() {
@@ -35,6 +35,6 @@ public class BossBullet extends GameObject {
     }
 
     public void render(Graphics g) {
-        g.drawImage(ENEMY_IMAGE, (int) x, (int) y, null);
+        g.drawImage(BOSS_BULLET_IMAGE, (int) x, (int) y, null);
     }
 }

@@ -6,10 +6,10 @@ import java.util.Arrays;
 
 public class KeyInput extends KeyAdapter {
 
-    private Handler handler;
-    private boolean[] keyDown = new boolean[4];
+    private final Handler handler;
+    private final boolean[] keyDown = new boolean[4];
 
-    Game game;
+    final Game game;
 
     public KeyInput(Handler handler, Game game) {
         this.handler = handler;
@@ -43,7 +43,7 @@ public class KeyInput extends KeyAdapter {
             }
         }
         if (key == KeyEvent.VK_P) {
-            if (game.gameState == Game.STATE.Game) {
+            if (Game.gameState == Game.STATE.Game) {
                 if (Game.paused) Game.paused = false;
                 else Game.paused = true;
             }

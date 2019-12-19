@@ -6,12 +6,12 @@ import java.awt.event.MouseEvent;
 
 public class Shop extends MouseAdapter {
 
-    Handler handler;
-    HUD hud;
+    final Handler handler;
+    final HUD hud;
 
     private int B1 = 1000;
     private int B2 = 1000;
-    private int B3 = 1000;
+    private final int B3 = 1000;
 
 
     public Shop(HUD hud, Handler handler) {
@@ -51,7 +51,7 @@ public class Shop extends MouseAdapter {
                     hud.setScore(hud.getScore() - B1);
                     B1 += 1000;
                     hud.bounds += 20;
-                    hud.HEALTH = (100 + (hud.bounds / 2));
+                    HUD.HEALTH = (100 + (hud.bounds / 2));
                 }
             }
         }
@@ -70,7 +70,7 @@ public class Shop extends MouseAdapter {
             if (my >= 100 && my < 180) {
                 if (hud.getScore() >= B3) {
                     hud.setScore(hud.getScore() - B3);
-                    hud.HEALTH = (100 + (hud.bounds / 2));
+                    HUD.HEALTH = (100 + (hud.bounds / 2));
                 }
             }
         }

@@ -4,9 +4,9 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Player extends GameObject {
-    Handler handler;
+    final Handler handler;
 
-    private BufferedImage player_image;
+    private final BufferedImage player_image;
 
     public Player(int x, int y, ID id, Handler handler) {
         super(x, y, id);

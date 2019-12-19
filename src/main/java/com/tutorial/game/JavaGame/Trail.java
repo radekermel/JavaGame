@@ -5,10 +5,11 @@ import java.awt.*;
 public class Trail extends GameObject {
 
     private float alpha = 1;
-    private Handler handler;
-    private Color color;
-    private int width, height;
-    private float life;
+    private final Handler handler;
+    private final Color color;
+    private final int width;
+    private final int height;
+    private final float life;
 
     public Trail(int x, int y, ID id, Color color, int width, int height, float life, Handler handler) {
         super(x, y, id);

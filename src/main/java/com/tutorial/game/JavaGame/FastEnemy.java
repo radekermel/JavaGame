@@ -5,8 +5,8 @@ import java.awt.image.BufferedImage;
 
 public class FastEnemy extends GameObject {
 
-    private Handler handler;
-    private BufferedImage FAST_ENEMY_IMAGE;
+    private final Handler handler;
+    private final BufferedImage FAST_ENEMY_IMAGE;
 
     public FastEnemy(int x, int y, ID id, Handler handler) {
         super(x, y, id);

@@ -10,12 +10,12 @@ public class Game extends Canvas implements Runnable {
     public static final int WIDTH = 640, HEIGHT = WIDTH / 12 * 9;
     private Thread thread;
     private boolean running = false;
-    private Random random;
-    private Handler handler;
-    private HUD hud;
-    private Spawn spawn;
-    private Menu menu;
-    private Shop shop;
+    private final Random random;
+    private final Handler handler;
+    private final HUD hud;
+    private final Spawn spawn;
+    private final Menu menu;
+    private final Shop shop;
 
     public int difficulty = 0;
     public static boolean paused = false;
@@ -26,7 +26,7 @@ public class Game extends Canvas implements Runnable {
         Game,
         Select,
         Shop,
-        End;
+        End
     }
 
     public static STATE gameState = STATE.Menu;

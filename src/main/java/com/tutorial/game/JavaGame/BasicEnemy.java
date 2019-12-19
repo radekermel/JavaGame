@@ -5,8 +5,8 @@ import java.awt.image.BufferedImage;
 
 public class BasicEnemy extends GameObject {
 
-    private Handler handler;
-    private BufferedImage ENEMY_IMAGE;
+    private final Handler handler;
+    private final BufferedImage BASIC_ENEMY_IMAGE;
 
     public BasicEnemy(int x, int y, ID id, Handler handler) {
         super(x, y, id);
@@ -15,7 +15,7 @@ public class BasicEnemy extends GameObject {
         velY = 5;
 
         SpriteSheet ss = new SpriteSheet((Game.SPRITE_SHEET));
-        ENEMY_IMAGE = ss.grabImage(1, 2, 32, 22);
+        BASIC_ENEMY_IMAGE = ss.grabImage(1, 2, 32, 22);
     }
 
     public Rectangle getBounds() {
@@ -33,6 +33,6 @@ public class BasicEnemy extends GameObject {
     }
 
     public void render(Graphics g) {
-        g.drawImage(ENEMY_IMAGE, (int) x, (int) y, null);
+        g.drawImage(BASIC_ENEMY_IMAGE, (int) x, (int) y, null);
     }
 }

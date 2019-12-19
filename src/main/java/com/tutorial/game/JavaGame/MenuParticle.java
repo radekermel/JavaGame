@@ -5,9 +5,9 @@ import java.util.Random;
 
 public class MenuParticle extends GameObject {
 
-    private Handler handler;
-    Random random = new Random();
-    private Color color;
+    private final Handler handler;
+    final Random random = new Random();
+    private final Color color;
 
     public MenuParticle(int x, int y, ID id, Handler handler) {
         super(x, y, id);

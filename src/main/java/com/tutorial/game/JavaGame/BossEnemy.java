@@ -6,9 +6,9 @@ import java.util.Random;
 
 public class BossEnemy extends GameObject {
 
-    private Handler handler;
-    private Random random = new Random();
-    private BufferedImage ENEMY_IMAGE;
+    private final Handler handler;
+    private final Random random = new Random();
+    private final BufferedImage BOSS_ENEMY_IMAGE;
     private int timer = 50;
     private int timer2 = 50;
 
@@ -18,7 +18,7 @@ public class BossEnemy extends GameObject {
         velX = 0;
         velY = 4;
         SpriteSheet ss = new SpriteSheet((Game.SPRITE_SHEET));
-        ENEMY_IMAGE = ss.grabImage(2, 3, 64, 32);
+        BOSS_ENEMY_IMAGE = ss.grabImage(2, 3, 64, 32);
     }
 
     public Rectangle getBounds() {
@@ -52,6 +52,6 @@ public class BossEnemy extends GameObject {
     }
 
     public void render(Graphics g) {
-        g.drawImage(ENEMY_IMAGE, (int) x, (int) y, null);
+        g.drawImage(BOSS_ENEMY_IMAGE, (int) x, (int) y, null);
     }
 }

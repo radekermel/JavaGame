@@ -6,10 +6,10 @@ import java.util.Random;
 
 public class HardEnemy extends GameObject {
 
-    private Handler handler;
-    private Random random = new Random();
+    private final Handler handler;
+    private final Random random = new Random();
 
-    private BufferedImage ENEMY_IMAGE;
+    private final BufferedImage HARD_ENEMY_IMAGE;
 
     public HardEnemy(int x, int y, ID id, Handler handler) {
         super(x, y, id);
@@ -18,7 +18,7 @@ public class HardEnemy extends GameObject {
         velY = 5;
 
         SpriteSheet ss = new SpriteSheet((Game.SPRITE_SHEET));
-        ENEMY_IMAGE = ss.grabImage(1, 4, 32, 32);
+        HARD_ENEMY_IMAGE = ss.grabImage(1, 4, 32, 32);
     }
 
     public Rectangle getBounds() {
@@ -44,6 +44,6 @@ public class HardEnemy extends GameObject {
     }
 
     public void render(Graphics g) {
-        g.drawImage(ENEMY_IMAGE, (int) x, (int) y, null);
+        g.drawImage(HARD_ENEMY_IMAGE, (int) x, (int) y, null);
     }
 }
