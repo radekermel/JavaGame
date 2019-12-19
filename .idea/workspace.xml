@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/KeyInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/KeyInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chart.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorial/game/JavaGame/BasicEnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorial/game/JavaGame/BasicEnemyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +242,7 @@
       <workItem from="1576614375779" duration="21324000" />
       <workItem from="1576707609871" duration="39000" />
       <workItem from="1576708989664" duration="4583000" />
-      <workItem from="1576782652703" duration="1740000" />
+      <workItem from="1576782652703" duration="7579000" />
     </task>
     <servers />
   </component>
@@ -286,25 +288,25 @@
     </state>
     <state x="625" y="-830" key="FileChooserDialogImpl/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576611229968" />
     <state x="625" y="-871" key="FileChooserDialogImpl/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576437368001" />
-    <state width="1647" height="239" key="GridCell.Tab.0.bottom" timestamp="1576783991183">
+    <state width="1647" height="239" key="GridCell.Tab.0.bottom" timestamp="1576794646691">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="239" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576783991183" />
+    <state width="1647" height="239" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576794646691" />
     <state width="1647" height="242" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984927" />
-    <state width="1647" height="239" key="GridCell.Tab.0.center" timestamp="1576783991182">
+    <state width="1647" height="239" key="GridCell.Tab.0.center" timestamp="1576794646691">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="239" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576783991182" />
+    <state width="1647" height="239" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576794646691" />
     <state width="1647" height="242" key="GridCell.Tab.0.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="239" key="GridCell.Tab.0.left" timestamp="1576783991182">
+    <state width="1647" height="239" key="GridCell.Tab.0.left" timestamp="1576794646690">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="239" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576783991182" />
+    <state width="1647" height="239" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576794646690" />
     <state width="1647" height="242" key="GridCell.Tab.0.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="239" key="GridCell.Tab.0.right" timestamp="1576783991182">
+    <state width="1647" height="239" key="GridCell.Tab.0.right" timestamp="1576794646691">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="239" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576783991182" />
+    <state width="1647" height="239" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576794646691" />
     <state width="1647" height="242" key="GridCell.Tab.0.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
     <state width="1647" height="296" key="GridCell.Tab.1.bottom" timestamp="1576782623338">
       <screen x="0" y="-1039" width="1691" height="910" />
@@ -342,6 +344,10 @@
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
     <state x="575" y="-860" key="extract.method.dialog/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460960028" />
+    <state x="543" y="-986" width="604" height="804" key="find.popup" timestamp="1576791495838">
+      <screen x="0" y="-1039" width="1691" height="910" />
+    </state>
+    <state x="543" y="-986" width="604" height="804" key="find.popup/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576791495838" />
     <state x="508" y="-847" width="672" height="678" key="search.everywhere.popup" timestamp="1576784245716">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>

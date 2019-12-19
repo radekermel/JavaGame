@@ -1,8 +1,11 @@
 package com.tutorial.game.JavaGame;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.Random;
 
 public class Game extends Canvas implements Runnable {
@@ -32,6 +35,7 @@ public class Game extends Canvas implements Runnable {
     public static STATE gameState = STATE.Menu;
 
     public static BufferedImage SPRITE_SHEET;
+    public static BufferedImage BACKGROUND;
 
     public Game() {
         handler = new Handler();
@@ -43,6 +47,7 @@ public class Game extends Canvas implements Runnable {
 
         BufferedImageLoader loader = new BufferedImageLoader();
         SPRITE_SHEET = loader.loadImage("/chart.png");
+        BACKGROUND = loader.loadImage("/background.jpg");
 
         this.addMouseListener(menu);
         this.addMouseListener(shop);
@@ -142,6 +147,7 @@ public class Game extends Canvas implements Runnable {
         Graphics g = bs.getDrawGraphics();
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, WIDTH, HEIGHT);
+        g.drawImage(BACKGROUND, 0, 0, null);
 
         if (paused) {
             g.setColor(Color.WHITE);

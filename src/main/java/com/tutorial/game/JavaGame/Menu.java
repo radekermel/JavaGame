@@ -138,17 +138,17 @@ public class Menu extends MouseAdapter {
             g.drawString("Try Again", 245, 390);
         } else if (Game.gameState == Game.STATE.Select) {
             g.setFont(headerFont);
-            g.setColor(Color.CYAN);
-            g.drawString("SELECT DIFFICULTY", 140, 50);
+            g.setColor(Color.WHITE);
+            g.drawString("SELECT DIFFICULTY", 70, 50);
 
             g.setFont(menuFont);
             g.setColor(Color.WHITE);
             g.drawRect(210, 150, 200, 64);
-            g.drawString("Normal", 270, 190);
+            g.drawString("Normal", 250, 190);
             g.drawRect(210, 250, 200, 64);
-            g.drawString("Hard", 270, 290);
+            g.drawString("Hard", 250, 290);
             g.drawRect(210, 350, 200, 64);
-            g.drawString("Back", 270, 390);
+            g.drawString("Back", 250, 390);
         }
     }
 }
