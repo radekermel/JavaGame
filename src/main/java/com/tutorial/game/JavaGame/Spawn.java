@@ -6,10 +6,10 @@ public class Spawn {
     private final Handler handler;
     private final HUD hud;
     private final Game game;
+    private final Random randomPosition = new Random();
     private int scoreKeep = 0;
     private int levelKeep = 0;
     private int enemyCount = 0;
-    private final Random randomPosition = new Random();
 
     public Spawn(Handler handler, HUD hud, Game game) {
         this.handler = handler;
@@ -17,12 +17,12 @@ public class Spawn {
         this.game = game;
     }
 
-    public void setEnemyCount(int enemyCount) {
-        this.enemyCount = enemyCount;
-    }
-
     public int getEnemyCount() {
         return enemyCount;
+    }
+
+    public void setEnemyCount(int enemyCount) {
+        this.enemyCount = enemyCount;
     }
 
     public void setLevelKeep(int levelKeep) {

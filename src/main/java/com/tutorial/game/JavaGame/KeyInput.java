@@ -44,8 +44,7 @@ public class KeyInput extends KeyAdapter {
         }
         if (key == KeyEvent.VK_P) {
             if (Game.gameState == Game.STATE.Game) {
-                if (Game.paused) Game.paused = false;
-                else Game.paused = true;
+                Game.paused = !Game.paused;
             }
         }
         if (key == KeyEvent.VK_ESCAPE) System.exit(1);
