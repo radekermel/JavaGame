@@ -8,6 +8,7 @@ public enum ID {
     HardEnemy(),
     BossEnemy(),
     BossBullet(),
+    PlayerBullet(),
     MenuParticle,
     Trail()
 }

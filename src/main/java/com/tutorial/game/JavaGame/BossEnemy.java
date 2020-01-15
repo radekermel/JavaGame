@@ -12,8 +12,8 @@ public class BossEnemy extends GameObject {
     private int timer = 50;
     private int timer2 = 50;
 
-    public BossEnemy(int x, int y, ID id, Handler handler) {
-        super(x, y, id);
+    public BossEnemy(int x, int y, ID id, Handler handler, int health) {
+        super(x, y, id, health);
         this.handler = handler;
         velX = 0;
         velY = 4;
@@ -45,7 +45,7 @@ public class BossEnemy extends GameObject {
             velX = Game.clamp(velX, -10, 10);
 
             int spawn = random.nextInt(10);
-            if (spawn == 0) handler.addObject(new BossBullet((int) x, (int) y, ID.BossBullet, handler));
+            if (spawn == 0) handler.addObject(new BossBullet((int) x, (int) y, ID.BossBullet, handler,1));
         }
 
         if (x <= 0 || x >= Game.WIDTH - 64) velX *= -1;

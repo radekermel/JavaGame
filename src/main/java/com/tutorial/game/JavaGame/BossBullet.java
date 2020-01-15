@@ -9,8 +9,8 @@ public class BossBullet extends GameObject {
     private final Handler handler;
     private final BufferedImage BOSS_BULLET_IMAGE;
 
-    public BossBullet(int x, int y, ID id, Handler handler) {
-        super(x, y, id);
+    public BossBullet(int x, int y, ID id, Handler handler, int health) {
+        super(x, y, id, health);
         this.handler = handler;
         Random random = new Random();
         velX = (random.nextInt(5 - -5) + -5);
@@ -31,7 +31,7 @@ public class BossBullet extends GameObject {
             handler.removeObject(this);
         }
 
-        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.red, 8, 8, 0.08f, handler)));
+        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.red, 8, 8, 0.08f, handler,1)));
     }
 
     public void render(Graphics g) {

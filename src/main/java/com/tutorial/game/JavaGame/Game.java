@@ -1,11 +1,8 @@
 package com.tutorial.game.JavaGame;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.util.Random;
 
 public class Game extends Canvas implements Runnable {
@@ -33,7 +30,6 @@ public class Game extends Canvas implements Runnable {
     }
 
     public static STATE gameState = STATE.Menu;
-
     public static BufferedImage SPRITE_SHEET;
     public static BufferedImage BACKGROUND;
 
@@ -41,8 +37,9 @@ public class Game extends Canvas implements Runnable {
         handler = new Handler();
         hud = new HUD();
         shop = new Shop(hud, handler);
-        menu = new Menu(this, handler, hud);
+        menu = new Menu(hud);
         this.addKeyListener(new KeyInput(handler, this));
+        this.addMouseListener(new MouseInput(handler, this, hud));
         new Window(WIDTH, HEIGHT, "Game title", this);
 
         BufferedImageLoader loader = new BufferedImageLoader();
@@ -56,10 +53,10 @@ public class Game extends Canvas implements Runnable {
         random = new Random();
 
         if (gameState == STATE.Game) {
-            handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
+            handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler,100));
         } else {
             for (int i = 0; i < 20; i++) {
-                handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler));
+                handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler,1));
             }
         }
     }
@@ -127,7 +124,7 @@ public class Game extends Canvas implements Runnable {
                     gameState = STATE.End;
                     handler.clearEnemies();
                     for (int i = 0; i < 20; i++) {
-                        handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler));
+                        handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler,1));
                     }
                 }
             }

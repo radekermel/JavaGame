@@ -8,8 +8,8 @@ public class BasicEnemy extends GameObject {
     private final Handler handler;
     private final BufferedImage BASIC_ENEMY_IMAGE;
 
-    public BasicEnemy(int x, int y, ID id, Handler handler) {
-        super(x, y, id);
+    public BasicEnemy(int x, int y, ID id, Handler handler,int health) {
+        super(x, y, id, health);
         this.handler = handler;
         velX = 5;
         velY = 5;
@@ -29,7 +29,7 @@ public class BasicEnemy extends GameObject {
         if (y <= 0 || y >= Game.HEIGHT - 32) velY *= -1;
         if (x <= 0 || x >= Game.WIDTH - 16) velX *= -1;
 
-        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.red, 8, 8, 0.08f, handler)));
+        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.red, 8, 8, 0.08f, handler,1)));
     }
 
     public void render(Graphics g) {

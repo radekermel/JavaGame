@@ -7,8 +7,8 @@ public class SmartEnemy extends GameObject {
     private final Handler handler;
     private GameObject player;
 
-    public SmartEnemy(int x, int y, ID id, Handler handler) {
-        super(x, y, id);
+    public SmartEnemy(int x, int y, ID id, Handler handler, int health) {
+        super(x, y, id, health);
         this.handler = handler;
         for (int i = 0; i < handler.object.size(); i++) {
             if (handler.object.get(i).getId() == ID.Player)
@@ -34,7 +34,7 @@ public class SmartEnemy extends GameObject {
         if (y <= 0 || y >= Game.HEIGHT - 32) velY *= -1;
         if (x <= 0 || x >= Game.WIDTH - 16) velX *= -1;
 
-        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.GREEN, 16, 16, 0.05f, handler)));
+        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.GREEN, 16, 16, 0.05f, handler, 1)));
     }
 
     public void render(Graphics g) {

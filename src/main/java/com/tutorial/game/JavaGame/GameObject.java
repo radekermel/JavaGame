@@ -7,11 +7,14 @@ public abstract class GameObject {
     protected float x, y;
     protected ID id;
     protected float velX, velY;
+    protected int health;
+    private int bossKillCount;
 
-    public GameObject(float x, float y, ID id) {
+    public GameObject(float x, float y, ID id, int health) {
         this.x = x;
         this.y = y;
         this.id = id;
+        this.health = health;
     }
 
     public abstract void tick();
@@ -19,6 +22,14 @@ public abstract class GameObject {
     public abstract void render(Graphics g);
 
     public abstract Rectangle getBounds();
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getHealth() {
+        return health;
+    }
 
     public void setX(float x) {
         this.x = x;

@@ -44,33 +44,34 @@ public class Shop extends MouseAdapter {
     public void mousePressed(MouseEvent e) {
         int mx = e.getX();
         int my = e.getY();
-
-        if (mx >= 100 && mx <= 200) {
-            if (my >= 100 && my < 180) {
-                if (hud.getScore() >= B1) {
-                    hud.setScore(hud.getScore() - B1);
-                    B1 += 1000;
-                    hud.bounds += 20;
-                    HUD.HEALTH = (100 + (hud.bounds / 2));
+        if (Game.gameState == Game.STATE.Shop) {
+            if (mx >= 100 && mx <= 200) {
+                if (my >= 100 && my < 180) {
+                    if (hud.getScore() >= B1) {
+                        hud.setScore(hud.getScore() - B1);
+                        B1 += 1000;
+                        hud.bounds += 20;
+                        HUD.HEALTH = (100 + (hud.bounds / 2));
+                    }
                 }
             }
-        }
 
-        if (mx >= 250 && mx <= 350) {
-            if (my >= 100 && my < 180) {
-                if (hud.getScore() >= B2) {
-                    hud.setScore(hud.getScore() - B2);
-                    B2 += 1000;
-                    handler.speed++;
+            if (mx >= 250 && mx <= 350) {
+                if (my >= 100 && my < 180) {
+                    if (hud.getScore() >= B2) {
+                        hud.setScore(hud.getScore() - B2);
+                        B2 += 1000;
+                        handler.speed++;
+                    }
                 }
             }
-        }
 
-        if (mx >= 400 && mx <= 500) {
-            if (my >= 100 && my < 180) {
-                if (hud.getScore() >= B3) {
-                    hud.setScore(hud.getScore() - B3);
-                    HUD.HEALTH = (100 + (hud.bounds / 2));
+            if (mx >= 400 && mx <= 500) {
+                if (my >= 100 && my < 180) {
+                    if (hud.getScore() >= B3) {
+                        hud.setScore(hud.getScore() - B3);
+                        HUD.HEALTH = (100 + (hud.bounds / 2));
+                    }
                 }
             }
         }
