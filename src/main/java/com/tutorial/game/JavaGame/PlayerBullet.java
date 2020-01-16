@@ -11,25 +11,19 @@ public class PlayerBullet extends GameObject {
     private static final Set<ID> ENEMIES = Collections.unmodifiableSet(EnumSet.of(ID.BasicEnemy, ID.BossEnemy, ID.SmartEnemy, ID.HardEnemy, ID.FastEnemy));
     private final Handler handler;
     private final BufferedImage BOSS_BULLET_IMAGE;
-    private int bossKillCount = 0;
 
     public PlayerBullet(int x, int y, ID id, Handler handler, int mx, int my, int health) {
         super(x, y, id, health);
         this.handler = handler;
 
-        velX = (mx - x) / 10;
-        velY = (my - y) / 10;
+
+        float bulletVelocity = 10.0f;
+        float angle = (float) Math.atan2(mx - x, my - y);
+        velY = (float) ((bulletVelocity) * Math.cos(angle));
+        velX = (float) ((bulletVelocity) * Math.sin(angle));
 
         SpriteSheet ss = new SpriteSheet((Game.SPRITE_SHEET));
         BOSS_BULLET_IMAGE = ss.grabImage(2, 2, 32, 22);
-    }
-
-    public int getBossKillCount() {
-        return bossKillCount;
-    }
-
-    public void setBossKillCount(int bossKillCount) {
-        this.bossKillCount = bossKillCount;
     }
 
     public Rectangle getBounds() {
@@ -50,15 +44,11 @@ public class PlayerBullet extends GameObject {
             if (ENEMIES.contains(tempObject.getId())) {
                 if (getBounds().intersects(tempObject.getBounds())) {
                     tempObject.setHealth(tempObject.getHealth() - 1);
-                    System.out.println(tempObject.id + "health: " + tempObject.getHealth());
+                    handler.removeObject(this);
                     if (tempObject.getHealth() == 0) {
-                        if (tempObject.getId() == ID.BossEnemy) {
-                            setBossKillCount(getBossKillCount()+1);
-                        }
                         handler.removeObject(tempObject);
                     }
                 }
-
             }
         }
 

@@ -53,10 +53,10 @@ public class Game extends Canvas implements Runnable {
         random = new Random();
 
         if (gameState == STATE.Game) {
-            handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler,100));
+            handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler, 100));
         } else {
             for (int i = 0; i < 20; i++) {
-                handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler,1));
+                handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler, 1));
             }
         }
     }
@@ -120,11 +120,10 @@ public class Game extends Canvas implements Runnable {
                 if (HUD.HEALTH <= 0) {
                     HUD.HEALTH = 100;
                     spawn.setLevelKeep(0);
-                    spawn.setEnemyCount(0);
                     gameState = STATE.End;
                     handler.clearEnemies();
                     for (int i = 0; i < 20; i++) {
-                        handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler,1));
+                        handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler, 1));
                     }
                 }
             }
