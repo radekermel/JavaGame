@@ -30,35 +30,53 @@ public class Spawn {
         if (scoreKeep >= 200) {
             scoreKeep = 0;
             hud.setLevel(hud.getLevel() + 1);
-
             setLevelKeep(getLevelKeeP() + 1);
-
-            if (getLevelKeeP() >= 1) {
-                if (game.difficulty == 0) {
-                    if (getLevelKeeP() % 3 != 0) {
-                        handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler, 1 + levelKeep));
-                    } else if (getLevelKeeP() % 5 != 0) {
-                        handler.addObject(new SmartEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.SmartEnemy, handler, 2 * (levelKeep / 3)));
-                    } else if (getLevelKeeP() % 10 != 0) {
-                        handler.clearEnemies();
-                        handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler, 2 * levelKeep));
-                    } else {
-                        handler.addObject(new BasicEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler, 2 + (levelKeep / 2)));
-                    }
+            if (game.difficulty == 0) {
+                if (getLevelKeeP() % 3 == 0) {
+                    handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50),
+                            randomPosition.nextInt(Game.HEIGHT - 50),
+                            ID.FastEnemy,
+                            handler,
+                            (5)));
+                } else if (getLevelKeeP() % 5 == 0) {
+                    handler.addObject(new SmartEnemy(randomPosition.nextInt(Game.WIDTH - 50),
+                            randomPosition.nextInt(Game.HEIGHT - 50),
+                            ID.SmartEnemy,
+                            handler,
+                            (2 * (getLevelKeeP() / 3))));
+                    handler.addObject(new PowerUp(randomPosition.nextInt(Game.WIDTH - 50),
+                            randomPosition.nextInt(Game.HEIGHT - 50),
+                            ID.PowerUp,
+                            handler,
+                            1));
+                } else if (getLevelKeeP() % 10 == 0) {
+                    handler.clearEnemies();
+                    handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48,
+                            -96,
+                            ID.BossEnemy,
+                            handler,
+                            (2 * getLevelKeeP())));
+                } else if (getLevelKeeP() % 2 == 0) {
+                    handler.addObject(new BasicEnemy(randomPosition.nextInt(Game.WIDTH - 50),
+                            randomPosition.nextInt(Game.HEIGHT - 50),
+                            ID.BasicEnemy,
+                            handler,
+                            2 + (getLevelKeeP() / 2)));
                 }
-                if (game.difficulty == 1) {
-                    if (getLevelKeeP() % 3 == 0) {
-                        handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler, 5));
-                    } else if (getLevelKeeP() % 5 == 0) {
-                        handler.addObject(new SmartEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.SmartEnemy, handler, 7));
-                    } else if (getLevelKeeP() % 15 == 0) {
-                        handler.clearEnemies();
-                        handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler, 30));
-                    } else {
-                        handler.addObject(new HardEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.HardEnemy, handler, 3));
-                    }
+            }
+            if (game.difficulty == 1) {
+                if (getLevelKeeP() % 3 == 0) {
+                    handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler, 5));
+                } else if (getLevelKeeP() % 5 == 0) {
+                    handler.addObject(new SmartEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.SmartEnemy, handler, 7));
+                } else if (getLevelKeeP() % 15 == 0) {
+                    handler.clearEnemies();
+                    handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -96, ID.BossEnemy, handler, 30));
+                } else {
+                    handler.addObject(new HardEnemy(randomPosition.nextInt(Game.WIDTH - 50), randomPosition.nextInt(Game.HEIGHT - 50), ID.HardEnemy, handler, 3));
                 }
             }
         }
     }
 }
+

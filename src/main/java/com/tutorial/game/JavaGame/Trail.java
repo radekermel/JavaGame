@@ -44,5 +44,4 @@ public class Trail extends GameObject {
         int type = AlphaComposite.SRC_OVER;
         return (AlphaComposite.getInstance(type, alpha));
     }
-
 }

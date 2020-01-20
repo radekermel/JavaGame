@@ -40,7 +40,7 @@ public class HardEnemy extends GameObject {
             else velX = (random.nextInt(7) + 1) * -1;
         }
 
-        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.YELLOW, 8, 8, 0.08f, handler,1)));
+        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.YELLOW, 8, 8, 0.08f, handler, 1)));
     }
 
     public void render(Graphics g) {

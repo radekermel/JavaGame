@@ -42,17 +42,17 @@ public class MouseInput extends MouseAdapter {
             //EasyButton
             if (mouseOver(mx, my, 210, 150, 200, 64)) {
                 Game.gameState = Game.STATE.Game;
-                handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler,100));
+                handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler, 100));
                 handler.clearEnemies();
-                handler.addObject(new BasicEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.BasicEnemy, handler,2));
+                handler.addObject(new BasicEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.BasicEnemy, handler, 2));
                 game.difficulty = 0;
             }
             //HardButton
             if (mouseOver(mx, my, 210, 250, 200, 64)) {
                 Game.gameState = Game.STATE.Game;
-                handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler,100));
+                handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler, 100));
                 handler.clearEnemies();
-                handler.addObject(new HardEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.HardEnemy, handler,3));
+                handler.addObject(new HardEnemy(random.nextInt(Game.WIDTH), random.nextInt(Game.HEIGHT), ID.HardEnemy, handler, 3));
                 game.difficulty = 1;
             }
             //BackButton
@@ -62,13 +62,13 @@ public class MouseInput extends MouseAdapter {
             }
         }
 
-        if(Game.gameState == Game.STATE.Game){
+        if (Game.gameState == Game.STATE.Game) {
 
             for (int i = 0; i < handler.object.size(); i++) {
                 GameObject tempObject = handler.object.get(i);
 
                 if (tempObject.getId() == ID.Player) {
-                    handler.addObject(new PlayerBullet((int) (tempObject.getX()) + 3, (int) (tempObject.getY()) + 9, ID.PlayerBullet, handler, mx, my,2));
+                    handler.addObject(new PlayerBullet((int) (tempObject.getX()) + 3, (int) (tempObject.getY()) + 9, ID.PlayerBullet, handler, mx, my, 2));
                 }
             }
         }

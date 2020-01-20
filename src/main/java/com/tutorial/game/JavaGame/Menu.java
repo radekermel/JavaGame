@@ -2,7 +2,6 @@ package com.tutorial.game.JavaGame;
 
 import java.awt.*;
 import java.awt.event.MouseAdapter;
-import java.util.Random;
 
 public class Menu extends MouseAdapter {
 

@@ -11,6 +11,7 @@ public class PlayerBullet extends GameObject {
     private static final Set<ID> ENEMIES = Collections.unmodifiableSet(EnumSet.of(ID.BasicEnemy, ID.BossEnemy, ID.SmartEnemy, ID.HardEnemy, ID.FastEnemy));
     private final Handler handler;
     private final BufferedImage BOSS_BULLET_IMAGE;
+    public static int DAMAGE = 1;
 
     public PlayerBullet(int x, int y, ID id, Handler handler, int mx, int my, int health) {
         super(x, y, id, health);
@@ -31,28 +32,31 @@ public class PlayerBullet extends GameObject {
     }
 
     public void tick() {
+        damageToEnemies();
         x += velX;
         y += velY;
 
-        if (y >= Game.HEIGHT) {
+
+        if (y >= Game.HEIGHT || x >= Game.WIDTH) {
             handler.removeObject(this);
         }
+    }
 
+    private void damageToEnemies() {
         for (int i = 0; i < handler.object.size(); i++) {
             GameObject tempObject = handler.object.get(i);
-
             if (ENEMIES.contains(tempObject.getId())) {
                 if (getBounds().intersects(tempObject.getBounds())) {
-                    tempObject.setHealth(tempObject.getHealth() - 1);
-                    handler.removeObject(this);
-                    if (tempObject.getHealth() == 0) {
+                    tempObject.setHealth(--health);
+                    System.out.println(tempObject.getHealth());
+                    //handler.removeObject(this);
+                    if (tempObject.getHealth() <= 0) {
+                        System.out.println("HP: " + tempObject.getHealth() + "Died:" + tempObject.getId());
                         handler.removeObject(tempObject);
                     }
                 }
             }
         }
-
-        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.red, 8, 8, 0.02f, handler, 1)));
     }
 
     public void render(Graphics g) {

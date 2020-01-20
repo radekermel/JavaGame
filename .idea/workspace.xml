@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="Added: Collision for bullets | Projectiles has constant speed | Removed unnecessary outprints.">
+    <list default="true" id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/PowerUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BasicEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BasicEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/ID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/KeyInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/KeyInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MenuParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MenuParticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MouseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MouseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/PlayerBullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Trail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Trail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,18 +108,18 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.tutorial.game.JavaGame" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tutorial.game.JavaGame" />
       <recent name="com.tutorial.game" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Game (1)">
@@ -259,14 +271,45 @@
       <workItem from="1579131662637" duration="1175000" />
       <workItem from="1579133483400" duration="1772000" />
       <workItem from="1579135300257" duration="890000" />
-      <workItem from="1579138939675" duration="586000" />
+      <workItem from="1579138939675" duration="1772000" />
+      <workItem from="1579140762691" duration="1127000" />
+      <workItem from="1579202800939" duration="1092000" />
+      <workItem from="1579208115514" duration="1791000" />
+      <workItem from="1579209936544" duration="1641000" />
+      <workItem from="1579220788207" duration="2113000" />
+      <workItem from="1579464353567" duration="1866000" />
+      <workItem from="1579466885840" duration="985000" />
+      <workItem from="1579486574430" duration="1792000" />
+      <workItem from="1579551169507" duration="1198000" />
     </task>
+    <task id="LOCAL-00001" summary="Added: Collision for bullets | Projectiles has constant speed | Removed unnecessary outprints.">
+      <created>1579139538273</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579139538273</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Added: Collision for bullets | Projectiles has constant speed | Removed unnecessary outprints." />
     <option name="LAST_COMMIT_MESSAGE" value="Added: Collision for bullets | Projectiles has constant speed | Removed unnecessary outprints." />
@@ -287,10 +330,10 @@
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
     <state x="534" y="-878" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576784237243" />
-    <state x="525" y="-857" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579120121389">
+    <state x="525" y="-857" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579464378642">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state x="525" y="-857" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579120121389" />
+    <state x="525" y="-857" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579464378642" />
     <state x="525" y="-898" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576444929798" />
     <state x="549" y="-900" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1576784361582">
       <screen x="0" y="-1039" width="1691" height="910" />
@@ -304,71 +347,71 @@
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
     <state x="575" y="-836" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579134936931" />
-    <state x="589" y="-746" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1576784263596">
+    <state x="589" y="-746" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579465138265">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state x="589" y="-746" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576784263596" />
-    <state x="121" y="-989" width="1510" height="810" key="CommitChangelistDialog2" timestamp="1579139501177">
+    <state x="589" y="-746" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579465138265" />
+    <state x="121" y="-989" width="1510" height="810" key="CommitChangelistDialog2" timestamp="1579139536844">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state x="121" y="-989" width="1510" height="810" key="CommitChangelistDialog2/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579139501177" />
-    <state x="92" y="-947" width="1507" height="727" key="DiffContextDialog" timestamp="1576616746917">
+    <state x="121" y="-989" width="1510" height="810" key="CommitChangelistDialog2/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579139536844" />
+    <state x="92" y="-947" width="1507" height="727" key="DiffContextDialog" timestamp="1579212330768">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state x="92" y="-947" width="1507" height="727" key="DiffContextDialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576616746917" />
+    <state x="92" y="-947" width="1507" height="727" key="DiffContextDialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579212330768" />
     <state x="625" y="-830" key="FileChooserDialogImpl" timestamp="1578535169204">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
     <state x="625" y="-830" key="FileChooserDialogImpl/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1578535169204" />
     <state x="625" y="-871" key="FileChooserDialogImpl/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576437368001" />
-    <state width="1647" height="176" key="GridCell.Tab.0.bottom" timestamp="1579139501413">
+    <state width="1647" height="176" key="GridCell.Tab.0.bottom" timestamp="1579487471864">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="176" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579139501413" />
+    <state width="1647" height="176" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579487471864" />
     <state width="1647" height="242" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984927" />
-    <state width="1647" height="176" key="GridCell.Tab.0.center" timestamp="1579139501413">
+    <state width="1647" height="176" key="GridCell.Tab.0.center" timestamp="1579487471864">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="176" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579139501413" />
+    <state width="1647" height="176" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579487471864" />
     <state width="1647" height="242" key="GridCell.Tab.0.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="176" key="GridCell.Tab.0.left" timestamp="1579139501413">
+    <state width="1647" height="176" key="GridCell.Tab.0.left" timestamp="1579487471863">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="176" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579139501413" />
+    <state width="1647" height="176" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579487471863" />
     <state width="1647" height="242" key="GridCell.Tab.0.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="176" key="GridCell.Tab.0.right" timestamp="1579139501413">
+    <state width="1647" height="176" key="GridCell.Tab.0.right" timestamp="1579487471864">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="176" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579139501413" />
+    <state width="1647" height="176" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579487471864" />
     <state width="1647" height="242" key="GridCell.Tab.0.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="296" key="GridCell.Tab.1.bottom" timestamp="1576782623338">
+    <state width="1647" height="296" key="GridCell.Tab.1.bottom" timestamp="1579486998390">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="296" key="GridCell.Tab.1.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576782623338" />
+    <state width="1647" height="296" key="GridCell.Tab.1.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579486998390" />
     <state width="1647" height="296" key="GridCell.Tab.1.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576447840192" />
-    <state width="1647" height="296" key="GridCell.Tab.1.center" timestamp="1576782623337">
+    <state width="1647" height="296" key="GridCell.Tab.1.center" timestamp="1579486998389">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="296" key="GridCell.Tab.1.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576782623337" />
+    <state width="1647" height="296" key="GridCell.Tab.1.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579486998389" />
     <state width="1647" height="296" key="GridCell.Tab.1.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576447840192" />
-    <state width="1647" height="296" key="GridCell.Tab.1.left" timestamp="1576782623337">
+    <state width="1647" height="296" key="GridCell.Tab.1.left" timestamp="1579486998387">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="296" key="GridCell.Tab.1.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576782623337" />
+    <state width="1647" height="296" key="GridCell.Tab.1.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579486998387" />
     <state width="1647" height="296" key="GridCell.Tab.1.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576447840191" />
-    <state width="1647" height="296" key="GridCell.Tab.1.right" timestamp="1576782623338">
+    <state width="1647" height="296" key="GridCell.Tab.1.right" timestamp="1579486998389">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state width="1647" height="296" key="GridCell.Tab.1.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576782623338" />
+    <state width="1647" height="296" key="GridCell.Tab.1.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579486998389" />
     <state width="1647" height="296" key="GridCell.Tab.1.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576447840192" />
     <state x="107" y="-851" width="1551" height="516" key="IDE.errors.dialog" timestamp="1576613898674">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
     <state x="107" y="-851" width="1551" height="516" key="IDE.errors.dialog/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1576613898674" />
-    <state x="354" y="-942" key="SettingsEditor" timestamp="1578535057774">
+    <state x="354" y="-942" key="SettingsEditor" timestamp="1579467253123">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state x="354" y="-942" key="SettingsEditor/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1578535057774" />
+    <state x="354" y="-942" key="SettingsEditor/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579467253123" />
     <state x="616" y="-866" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576614805294">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
@@ -377,10 +420,10 @@
       <screen x="0" y="-1080" width="1691" height="910" />
     </state>
     <state x="575" y="-860" key="extract.method.dialog/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460960028" />
-    <state x="543" y="-986" width="604" height="804" key="find.popup" timestamp="1579135522663">
+    <state x="543" y="-986" width="604" height="804" key="find.popup" timestamp="1579467201144">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>
-    <state x="543" y="-986" width="604" height="804" key="find.popup/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579135522663" />
+    <state x="543" y="-986" width="604" height="804" key="find.popup/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579467201144" />
     <state x="502" y="-311" key="run.anything.popup" timestamp="1579031163305">
       <screen x="0" y="-1039" width="1691" height="910" />
     </state>

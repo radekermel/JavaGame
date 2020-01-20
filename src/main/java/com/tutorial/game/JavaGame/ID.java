@@ -9,6 +9,7 @@ public enum ID {
     BossEnemy(),
     BossBullet(),
     PlayerBullet(),
+    PowerUp(),
     MenuParticle,
     Trail()
 }

@@ -19,7 +19,7 @@ public class FastEnemy extends GameObject {
     }
 
     public Rectangle getBounds() {
-        return new Rectangle((int) x, (int) y, 16, 16);
+        return new Rectangle((int) x, (int) y, 28, 22);
     }
 
     public void tick() {

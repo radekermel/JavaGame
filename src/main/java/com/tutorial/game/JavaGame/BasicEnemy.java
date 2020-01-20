@@ -19,7 +19,7 @@ public class BasicEnemy extends GameObject {
     }
 
     public Rectangle getBounds() {
-        return new Rectangle((int) x, (int) y, 28, 18);
+        return new Rectangle((int) x, (int) y, 32, 22);
     }
 
     public void tick() {

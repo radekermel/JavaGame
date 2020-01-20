@@ -8,7 +8,6 @@ public abstract class GameObject {
     protected ID id;
     protected float velX, velY;
     protected int health;
-    private int bossKillCount;
 
     public GameObject(float x, float y, ID id, int health) {
         this.x = x;
