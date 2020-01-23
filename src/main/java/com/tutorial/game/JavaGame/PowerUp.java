@@ -8,8 +8,8 @@ public class PowerUp extends GameObject {
 
     private final Handler handler;
 
-    public PowerUp(int x, int y, ID id, Handler handler, int health) {
-        super(x, y, id, health);
+    public PowerUp(int x, int y, ID id, Handler handler) {
+        super(x, y, id);
         this.handler = handler;
         velX = 0;
         velY = 0;

@@ -53,10 +53,10 @@ public class Game extends Canvas implements Runnable {
         random = new Random();
 
         if (gameState == STATE.Game) {
-            handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler, 100));
+            handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
         } else {
             for (int i = 0; i < 20; i++) {
-                handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler, 1));
+                handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler));
             }
         }
     }
@@ -123,7 +123,7 @@ public class Game extends Canvas implements Runnable {
                     gameState = STATE.End;
                     handler.clearEnemies();
                     for (int i = 0; i < 20; i++) {
-                        handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler, 1));
+                        handler.addObject(new MenuParticle(random.nextInt(WIDTH), random.nextInt(HEIGHT), ID.MenuParticle, handler));
                     }
                 }
             }

@@ -12,7 +12,7 @@ public class HardEnemy extends GameObject {
     private final BufferedImage HARD_ENEMY_IMAGE;
 
     public HardEnemy(int x, int y, ID id, Handler handler, int health) {
-        super(x, y, id, health);
+        super(x, y, id);
         this.handler = handler;
         velX = 5;
         velY = 5;
@@ -40,7 +40,7 @@ public class HardEnemy extends GameObject {
             else velX = (random.nextInt(7) + 1) * -1;
         }
 
-        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.YELLOW, 8, 8, 0.08f, handler, 1)));
+        handler.addObject((new Trail((int) x, (int) y, ID.Trail, Color.YELLOW, 8, 8, 0.08f, handler)));
     }
 
     public void render(Graphics g) {

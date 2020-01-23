@@ -9,6 +9,12 @@ public abstract class GameObject {
     protected float velX, velY;
     protected int health;
 
+    public GameObject(float x, float y, ID id) {
+        this.x = x;
+        this.y = y;
+        this.id = id;
+    }
+
     public GameObject(float x, float y, ID id, int health) {
         this.x = x;
         this.y = y;

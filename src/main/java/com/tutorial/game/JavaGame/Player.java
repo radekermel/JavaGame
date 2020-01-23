@@ -9,8 +9,8 @@ public class Player extends GameObject {
 
     private final BufferedImage player_image;
 
-    public Player(int x, int y, ID id, Handler handler, int health) {
-        super(x, y, id, health);
+    public Player(int x, int y, ID id, Handler handler) {
+        super(x, y, id);
         this.handler = handler;
         SpriteSheet ss = new SpriteSheet(Game.SPRITE_SHEET);
         player_image = ss.grabImage(1, 1, 32, 32);

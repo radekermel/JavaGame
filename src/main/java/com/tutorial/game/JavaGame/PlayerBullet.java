@@ -13,8 +13,8 @@ public class PlayerBullet extends GameObject {
     private final BufferedImage BOSS_BULLET_IMAGE;
     public static int DAMAGE = 1;
 
-    public PlayerBullet(int x, int y, ID id, Handler handler, int mx, int my, int health) {
-        super(x, y, id, health);
+    public PlayerBullet(int x, int y, ID id, Handler handler, int mx, int my) {
+        super(x, y, id);
         this.handler = handler;
 
 
