@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="50c911ff-1c8e-46f4-a464-c9316bb1a565" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BasicEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BasicEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BossBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BossBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BossEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/BossEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/FastEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/HardEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MenuParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MenuParticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MouseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/MouseInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/PlayerBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/PowerUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/PowerUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/SmartEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/SmartEnemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Spawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Trail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/game/JavaGame/Trail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +269,8 @@
       <workItem from="1579486574430" duration="1792000" />
       <workItem from="1579551169507" duration="1198000" />
       <workItem from="1579560281768" duration="601000" />
-      <workItem from="1579742017956" duration="606000" />
+      <workItem from="1579742017956" duration="1322000" />
+      <workItem from="1579744460963" duration="1087000" />
     </task>
     <task id="LOCAL-00001" summary="Added: Collision for bullets | Projectiles has constant speed | Removed unnecessary outprints.">
       <created>1579139538273</created>
@@ -366,29 +354,29 @@
     </state>
     <state x="625" y="-830" key="FileChooserDialogImpl/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1578535169204" />
     <state x="625" y="-871" key="FileChooserDialogImpl/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576437368001" />
-    <state width="1647" height="176" key="GridCell.Tab.0.bottom" timestamp="1579742620185">
+    <state width="1647" height="176" key="GridCell.Tab.0.bottom" timestamp="1579745521716">
       <screen x="0" y="41" width="1691" height="910" />
     </state>
     <state width="1647" height="176" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579487471864" />
-    <state width="1647" height="176" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.41.1691.910" timestamp="1579742620185" />
+    <state width="1647" height="176" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1039.1691.910@0.41.1691.910" timestamp="1579745521716" />
     <state width="1647" height="242" key="GridCell.Tab.0.bottom/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984927" />
-    <state width="1647" height="176" key="GridCell.Tab.0.center" timestamp="1579742620185">
+    <state width="1647" height="176" key="GridCell.Tab.0.center" timestamp="1579745521716">
       <screen x="0" y="41" width="1691" height="910" />
     </state>
     <state width="1647" height="176" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579487471864" />
-    <state width="1647" height="176" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.41.1691.910" timestamp="1579742620185" />
+    <state width="1647" height="176" key="GridCell.Tab.0.center/0.41.1691.910/0.-1039.1691.910@0.41.1691.910" timestamp="1579745521716" />
     <state width="1647" height="242" key="GridCell.Tab.0.center/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="176" key="GridCell.Tab.0.left" timestamp="1579742620185">
+    <state width="1647" height="176" key="GridCell.Tab.0.left" timestamp="1579745521716">
       <screen x="0" y="41" width="1691" height="910" />
     </state>
     <state width="1647" height="176" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579487471863" />
-    <state width="1647" height="176" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.41.1691.910" timestamp="1579742620185" />
+    <state width="1647" height="176" key="GridCell.Tab.0.left/0.41.1691.910/0.-1039.1691.910@0.41.1691.910" timestamp="1579745521716" />
     <state width="1647" height="242" key="GridCell.Tab.0.left/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
-    <state width="1647" height="176" key="GridCell.Tab.0.right" timestamp="1579742620185">
+    <state width="1647" height="176" key="GridCell.Tab.0.right" timestamp="1579745521716">
       <screen x="0" y="41" width="1691" height="910" />
     </state>
     <state width="1647" height="176" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.-1039.1691.910" timestamp="1579487471864" />
-    <state width="1647" height="176" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.41.1691.910" timestamp="1579742620185" />
+    <state width="1647" height="176" key="GridCell.Tab.0.right/0.41.1691.910/0.-1039.1691.910@0.41.1691.910" timestamp="1579745521716" />
     <state width="1647" height="242" key="GridCell.Tab.0.right/0.41.1691.910/0.-1080.1691.910@0.-1080.1691.910" timestamp="1576460984926" />
     <state width="1647" height="296" key="GridCell.Tab.1.bottom" timestamp="1579486998390">
       <screen x="0" y="-1039" width="1691" height="910" />

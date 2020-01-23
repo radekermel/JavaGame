@@ -47,11 +47,11 @@ public class PlayerBullet extends GameObject {
             GameObject tempObject = handler.object.get(i);
             if (ENEMIES.contains(tempObject.getId())) {
                 if (getBounds().intersects(tempObject.getBounds())) {
-                    tempObject.setHealth(--health);
-                    System.out.println(tempObject.getHealth());
-                    //handler.removeObject(this);
+                    tempObject.setHealth(tempObject.getHealth() - DAMAGE);
+                    System.out.println(tempObject.getId() + " HP: " + tempObject.getHealth());
+                    handler.removeObject(this);
                     if (tempObject.getHealth() <= 0) {
-                        System.out.println("HP: " + tempObject.getHealth() + "Died:" + tempObject.getId());
+                        System.out.println("Died:" + tempObject.getId());
                         handler.removeObject(tempObject);
                     }
                 }

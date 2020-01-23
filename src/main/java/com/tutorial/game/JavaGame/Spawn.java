@@ -33,34 +33,39 @@ public class Spawn {
             setLevelKeep(getLevelKeeP() + 1);
             if (game.difficulty == 0) {
                 if (getLevelKeeP() % 3 == 0) {
-                    handler.addObject(new FastEnemy(randomPosition.nextInt(Game.WIDTH - 50),
+                    handler.addObject(new FastEnemy(
+                            randomPosition.nextInt(Game.WIDTH - 50),
                             randomPosition.nextInt(Game.HEIGHT - 50),
                             ID.FastEnemy,
                             handler,
-                            (5)));
+                            (getLevelKeeP())));
                 } else if (getLevelKeeP() % 5 == 0) {
-                    handler.addObject(new SmartEnemy(randomPosition.nextInt(Game.WIDTH - 50),
+                    handler.addObject(new SmartEnemy(
+                            randomPosition.nextInt(Game.WIDTH - 50),
                             randomPosition.nextInt(Game.HEIGHT - 50),
                             ID.SmartEnemy,
                             handler,
-                            (3)));
-                    handler.addObject(new PowerUp(randomPosition.nextInt(Game.WIDTH - 50),
+                            (getLevelKeeP() * 2)));
+                    handler.addObject(new PowerUp(
+                            randomPosition.nextInt(Game.WIDTH - 50),
                             randomPosition.nextInt(Game.HEIGHT - 50),
                             ID.PowerUp,
                             handler));
                 } else if (getLevelKeeP() % 10 == 0) {
                     handler.clearEnemies();
-                    handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48,
+                    handler.addObject(new BossEnemy(
+                            (Game.WIDTH / 2) - 48,
                             -96,
                             ID.BossEnemy,
                             handler,
-                            (2)));
+                            (getLevelKeeP() * 10)));
                 } else if (getLevelKeeP() % 2 == 0) {
-                    handler.addObject(new BasicEnemy(randomPosition.nextInt(Game.WIDTH - 50),
+                    handler.addObject(new BasicEnemy(
+                            randomPosition.nextInt(Game.WIDTH - 50),
                             randomPosition.nextInt(Game.HEIGHT - 50),
                             ID.BasicEnemy,
                             handler,
-                            2));
+                            getLevelKeeP()));
                 }
             }
             if (game.difficulty == 1) {
